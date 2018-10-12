@@ -25,14 +25,11 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTop"></activity>
+            android:launchMode="singleTop" />
         <activity
             android:name=".AboutActivity"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".TipsActivity"
-            android:label="@string/title_activity_tips"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".TipsActivity"></activity>
     </application>
 
 </manifest>

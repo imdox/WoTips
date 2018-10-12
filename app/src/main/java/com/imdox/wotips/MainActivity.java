@@ -24,14 +24,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    public static ArrayList<TipsData> tipsData;
-    public static final int TYPE_TIPS=0;
-    private List<Object> adapterList;
-    private InterstitialAd mInterstitialAd;
     private int index = 0;
     private CardView cardHealth;
-
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onResume() {
@@ -46,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private AdView adView;
+    public static final int TYPE_TIPS=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,31 +103,7 @@ public class MainActivity extends AppCompatActivity {
         });*/
     }
 
-    /*private void loadData(){
-        try{
-            String[] str_heading = getResources().getStringArray(R.array.strHeading);
-            String[] str_value = getResources().getStringArray(R.array.strValue);
-            tipsData = new ArrayList<TipsData>();
-            for (int i=0;i<str_heading.length;i++) {
-                tipsData.add(new TipsData(str_heading[i],str_value[i]));
-            }
 
-            adapterList = new ArrayList<>();
-            adapterList.addAll(tipsData);
-            // Initiating Adapter
-
-            recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
-            // Set Layout Manager
-            RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(MainActivity.this,1);
-            recyclerView.setLayoutManager(mLayoutManager);
-            TipsAdapter modelListAdapter = new TipsAdapter(MainActivity.this);
-            recyclerView.setAdapter(modelListAdapter);
-            modelListAdapter.setAdapterData(adapterList);
-            modelListAdapter.notifyDataSetChanged();
-        }catch (Exception e){
-        }
-    }
-*/
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
             getMenuInflater().inflate(R.menu.menu_main, menu);
