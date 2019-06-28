@@ -1,16 +1,9 @@
-package com.imdox.wotips;
+package com.imdox.wotips.support;
 
 import android.app.Application;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.os.Build;
-import android.provider.Settings;
-import android.telephony.TelephonyManager;
-import android.text.TextUtils;
 
 import java.util.Locale;
 
@@ -18,6 +11,7 @@ import java.util.Locale;
 public class AppController extends Application {
 
     private static AppController mInstance;
+    public static final int TYPE_TIPS=0,USER_TIPS_TYPE=1;
 
     public static synchronized AppController getInstance() {
         return mInstance;

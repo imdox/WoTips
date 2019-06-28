@@ -1,4 +1,4 @@
-package com.imdox.wotips;
+package com.imdox.wotips.tips;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.imdox.wotips.R;
+import com.imdox.wotips.support.AppController;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +34,9 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @Override
     public int getItemViewType(int position) {
         if (dataList.get(position) instanceof TipsData) {
-            return MainActivity.TYPE_TIPS;
+            return AppController.TYPE_TIPS;
+        }else if (dataList.get(position) instanceof UserTips) {
+            return AppController.USER_TIPS_TYPE;
         }
         return -1;
     }
@@ -40,9 +46,13 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, final int position) {
         int viewType=holder.getItemViewType();
         switch (viewType){
-            case MainActivity.TYPE_TIPS:
+            case AppController.TYPE_TIPS:
                 TipsData tipsData=(TipsData) dataList.get(position);
                 ((DetailsViewHolder)holder).showTipsDetails(tipsData,position);
+                break;
+            case AppController.USER_TIPS_TYPE:
+                UserTips userTips=(UserTips) dataList.get(position);
+                ((userTipsViewHolder)holder).userTipsShowDetails(userTips,position);
                 break;
             default:
                 break;
@@ -60,10 +70,15 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         // Identify viewType returned by getItemViewType(...)
         // and return ViewHolder Accordingly
         switch (viewType){
-            case MainActivity.TYPE_TIPS:
+            case AppController.TYPE_TIPS:
                 layout= R.layout.tips_item;
                 View modelView = LayoutInflater.from(parent.getContext()).inflate(layout, parent, false);
                 viewHolder=new DetailsViewHolder(modelView);
+                break;
+            case AppController.USER_TIPS_TYPE:
+                layout= R.layout.tips_item;
+                View userTipsView = LayoutInflater.from(parent.getContext()).inflate(layout, parent, false);
+                viewHolder=new userTipsViewHolder(userTipsView);
                 break;
             default:
                 viewHolder=null;
@@ -91,6 +106,26 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public void showTipsDetails(final TipsData tipsData, final int position){
             txtHeading.setText((position+1)+". "+ tipsData.getStrHeading());
             txtTips.setText(tipsData.getStrValue());
+        }
+    }
+
+    public class userTipsViewHolder extends RecyclerView.ViewHolder {
+
+        private TextView txtHeading,txtTips;
+
+        public userTipsViewHolder(View itemView) {
+            super(itemView);
+            // Initiate view
+            txtHeading =(TextView)itemView.findViewById(R.id.txtHeading);
+            txtTips = (TextView) itemView.findViewById(R.id.txtTips);
+
+            txtHeading.setTypeface(AppController.getDefaultBoldFont(context));
+            txtTips.setTypeface(AppController.getDefaultFont(context));
+        }
+
+        public void userTipsShowDetails(final UserTips userTips, final int position){
+            txtHeading.setText((position+1)+". "+ userTips.getTipTitle());
+            txtTips.setText(userTips.getTipContent());
         }
     }
 }

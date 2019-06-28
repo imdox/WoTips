@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".home.MainActivity"
     android:orientation="vertical"
     android:background="#f1f1f1"
     android:padding="4dp"
@@ -31,7 +31,7 @@
                 <android.support.v7.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
-                    android:id="@+id/idEmergency"
+                    android:id="@+id/cardEMGInfo"
                     android:layout_width="match_parent"
                     android:layout_height="170dp"
                     android:layout_weight="0.5"
@@ -48,9 +48,11 @@
                             android:src="@drawable/ic_help_black_24dp"
                             android:padding="12dp"/>
                         <TextView
+                            android:id="@+id/txtEmG"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
                             android:layout_marginTop="10dp"
                             android:text="Emergency"/>
                         <View
@@ -59,6 +61,7 @@
                             android:background="@color/lightgray"
                             android:layout_margin="10dp"/>
                         <TextView
+                            android:id="@+id/txtEmGValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -72,6 +75,7 @@
                 <android.support.v7.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:id="@+id/cardGraphics"
                     android:layout_width="match_parent"
                     android:layout_height="170dp"
                     android:layout_weight="0.5"
@@ -88,17 +92,20 @@
                             android:src="@drawable/ic_photo_library_black_24dp"
                             android:padding="12dp"/>
                         <TextView
+                            android:id="@+id/txtImages"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
                             android:layout_marginTop="10dp"
-                            android:text="Ideas"/>
+                            android:text="Images"/>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@color/lightgray"
                             android:layout_margin="10dp"/>
                         <TextView
+                            android:id="@+id/txtImagesValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -122,47 +129,7 @@
                 <android.support.v7.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
-                    android:id="@+id/bankcardId"
-                    android:layout_width="match_parent"
-                    android:layout_height="170dp"
-                    android:layout_weight="0.5"
-                    android:layout_margin="5dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/circleshape"
-                            android:src="@drawable/ic_view_list_black_24dp"
-                            android:padding="12dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:layout_marginTop="10dp"
-                            android:text="User tips"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/lightgray"
-                            android:layout_margin="10dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="tips given by user"
-                            android:padding="5dp"
-                            android:textColor="@android:color/darker_gray"/>
-
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
+                    android:id="@+id/cardAddTips"
                     android:layout_width="match_parent"
                     android:layout_height="170dp"
                     android:layout_weight="0.5"
@@ -179,9 +146,11 @@
                             android:src="@drawable/ic_add_box_black_24dp"
                             android:padding="12dp"/>
                         <TextView
+                            android:id="@+id/txtAddTips"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
                             android:layout_marginTop="10dp"
                             android:text="Add tips"/>
                         <View
@@ -190,6 +159,7 @@
                             android:background="@color/lightgray"
                             android:layout_margin="10dp"/>
                         <TextView
+                            android:id="@+id/txtAddTipsValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -199,13 +169,57 @@
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/cardTipsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/circleshape"
+                            android:src="@drawable/ic_view_list_black_24dp"
+                            android:padding="12dp"/>
+                        <TextView
+                            android:id="@+id/txtTipsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:layout_marginTop="10dp"
+                            android:text="User tips"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <TextView
+                            android:id="@+id/txtTipsValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="tips given by user"
+                            android:padding="5dp"
+                            android:textColor="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
 
             </LinearLayout>
 
             <android.support.v7.widget.CardView
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
-                android:id="@+id/cardHealth"
+                android:id="@+id/tipsHealth"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="0.5"
@@ -238,6 +252,7 @@
             <android.support.v7.widget.CardView
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
+                android:id="@+id/tipsSafety"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="0.5"
@@ -261,7 +276,7 @@
                         android:textStyle="bold"
                         android:gravity="center"
                         android:layout_marginLeft="16dp"
-                        android:text="Security Tips"/>
+                        android:text="Safety Tips"/>
 
 
                 </LinearLayout>
@@ -269,6 +284,7 @@
             <android.support.v7.widget.CardView
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
+                android:id="@+id/tipsPregnancy"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="0.5"
@@ -303,6 +319,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="0.5"
+                android:id="@+id/tipsPeriod"
                 android:layout_margin="5dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -331,6 +348,7 @@
             <android.support.v7.widget.CardView
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
+                android:id="@+id/tipsFashion"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="0.5"
@@ -362,6 +380,7 @@
             <android.support.v7.widget.CardView
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
+                android:id="@+id/tipsBeauty"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="0.5"
@@ -395,6 +414,7 @@
                 android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:id="@+id/tipsOthers"
                 android:layout_weight="0.5"
                 android:layout_margin="5dp">
                 <LinearLayout

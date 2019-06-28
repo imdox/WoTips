@@ -2,7 +2,16 @@
     <string name="app_name">WoTips</string>
     <string name="bannerAdd">ca-app-pub-1273779759756778/7177963006</string>
     <string name="intAdd">ca-app-pub-1273779759756778/2551063104</string>
+    <string name="tagTipsNode">user_tips</string>
+
     <string name="strAbout">Women’s security and women’s safety in today’s society has been an enduring subject from the time when the first girl appeared on the face of the Mother Earth. So what can we do? How can we ensure safety for women? Well, all we can do is accept the fact and take hands-on steps to improve our safety. Taking the above-stated safety tips for women to protect you will severely lessen your chances of becoming a prey of crime against women.\n\nStay alert of your surroundings! Take defensive measures and follow these safety tips for women to prevent crime against you and protect yourself. In fact, I would encourage you to pass this important message on to all women you know. Not just to your family and friends, but to one and all. All of us need to hear it. For you and to share with your precious ones, particularly the women.</string>
+    <string name="title_activity_tips">TipsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="emptyString">You missed this one!</string>
+    <string name="errorValidMobile">A 10-digit number please!</string>
+    <string name="errorInvalidEmail">This email address is invalid</string>
+
+    <!-- data array-->
     <string-array name="strHeading">
         <item>Always be attentive</item>
         <item>Set your boundaries and impose them</item>
@@ -43,95 +52,143 @@
         <item>Practice running! It, in fact, it is one of the most important female safety tips. You can begin with running for a short distance. Why? See, if you run on no occasion, then you won’t ever be sure that you can if you have to. Running away proves to be a cherished self-protection tool. So, Run, Lady, Run! Even if the aggressor has a gun pointed at you, run as fast as you can for your life!</item>
         <item>Last but not least, never give up, no matter what happens! In fact safety tips for women are all about not losing hope, giving the free rein to your inner b**ch and letting her go! If you’re fighting the battle for your life, make certain that you’re the champ. It’s just the right time to play the dirty game of life and death and let the cards fall where they must. Or else, following any of the above safety tips for women is purposeless!</item>
     </string-array>
-    <string name="title_activity_tips">TipsActivity</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
-    </string>
-    <string name="action_settings">Settings</string>
+    <string-array name="tipsHealthTitle">
+        <item>Zap your stress</item>
+        <item>Stop dieting</item>
+        <item>Don't “OD” on calcium</item>
+        <item>Do more than cardio</item>
+        <item>Think about fertility</item>
+        <item>Appreciate birth control</item>
+        <item>See your doctor every year</item>
+        <item>Have good sex</item>
+        <item>Get more sleep</item>
+        <item>Consider genetic testing</item>
+    </string-array>
+    <string-array name="tipsHealthContent">
+        <item>The biggest issue I see in most of my patients is that they have too much on their plates and want to juggle it all. Stress can have significant health consequences, from infertility to higher risks of depression, anxiety, and heart disease. Find the stress-reduction method that works for you and stick with it</item>
+        <item>Eating healthy doesn &apos; t mean you have to forgo your favorite glass of wine or a piece of chocolate cake now and then. The key is moderation. Get a mix of lean proteins, healthy fats, smart carbs, and fiber.</item>
+        <item>Too much absorbed calcium can increase the risk of kidney stones and may even increase the risk of heart disease. If you&apos;re under 50, shoot for 1,000 milligrams per day, while over-50 women should be getting 1,200 milligrams per day mainly through diet -- about three servings of calcium-rich foods such as milk, salmon, and almonds.</item>
+        <item>Women need a mix of cardio and resistance or weight-bearing exercise at least three to five times a week to help prevent osteoporosis, heart disease, cancer, and diabetes. Exercise also promotes good self-image, which is really important to a woman&apos;s mental health.</item>
+        <item>While many women have no problem getting pregnant in their late 30s and even into their early 40s, a woman&apos;s fertility may start to decline as early as 32. So if you want to have kids, talk to your doctor about options, like freezing your eggs</item>
+        <item>Birth control gets a bad rap, but not only can it keep you from getting pregnant before you&apos;re ready, studies show it can lower the risk of uterine and ovarian cancer as well as regulate your cycle.</item>
+        <item>Make sure you get a Pap test to check for cervical cancer every 3 years if you are 21 or older. If you are 30-65, you can get both a Pap test and HPV test every 5 years. Older than that, you may be able to stop testing if your doctor says you are low risk. If you are sexually active and have a higher risk for STDs, get tests for chlamydia, gonorrhea, and syphilis yearly. Take an HIV test at least once, more frequently if you’re at risk. Don&apos;t skip your yearly checkup. Your doctor needs to annually assess many other issues such as potential infection, your need for contraception, and sexual complaints.</item>
+        <item>Sex reduces stress and may lower the risk of chronic disease -- but only if you enjoy it. If anything prevents you from sexual fulfillment, such as dryness or pain, talk to your doctor to find a solution.</item>
+        <item>Sleep needs differ, but if you have trouble getting out of bed, tire easily, or have trouble concentrating, you likely aren&apos;t getting enough. Recent studies suggest this can put you at greater risk of heart disease and psychological problems.</item>
+        <item>Doctors can now screen people with a family history of breast cancer, ovarian cancer, and chronic diseases to assess their risk -- and then consider preventive measures. Talk to your doctor</item>
+    </string-array>
+    <string-array name="tipsSafetyTitle">
+        <item>PRACTICE AWARENESS</item>
+        <item>USE YOUR SIXTH SENSE</item>
+        <item>TAKE SELF-DEFENSE TRAINING</item>
+        <item>ESCAPE IS ALWAYS YOUR BEST OPTION</item>
+        <item>YOU HAVE A RIGHT TO FIGHT</item>
+        <item>PEPPER SPRAY IS NOT YOUR SECRET WEAPON</item>
+        <item>SAFEGUARD AGAINST HOME INVASIONS</item>
+        <item>AVOID A CAR-JACKING</item>
+        <item>BE PREPARED WHEN YOU TRAVEL</item>
+        <item>USE THE INTERNET WISELY</item>
+    </string-array>
+    <string-array name="tipsSafetyContent">
+        <item>This is your first line of defence. Most people think of kicks to the groin and blocking punches when they hear the term “self-defence.” However, true self-defense begins long before any actual physical contact. The first, and probably most important, component in self-defense is awareness: awareness of yourself, your surroundings, and your potential attacker’s likely strategies. The criminal’s primary strategy is to use the advantage of surprise. Studies have shown that criminals are adept at choosing targets who appear to be unaware of what is going on around them. By being aware of your surroundings and by projecting a “force presence,” many altercations which are commonplace on the street can be avoided.</item>
+        <item>“Sixth sense.” “Gut instinct.” Whatever you call it, your intuition is a powerful subconscious insight into situations and people. All of us, especially women, have this gift, but very few of us pay attention to it. Learn to trust this power and use it to your full advantage. Avoid a person or a situation which does not “feel” safe — you’re probably right</item>
+        <item>It is important to evaluate the goals and practical usefulness of a women’s self-defense program before signing up. Here are two tips: - Avoid martial arts studios** unless you specifically wish to train in the traditional martial arts techniques and are prepared for a long-term commitment. Many women’s self-defense programs teach watered-down martial arts techniques that are complex and unrealistic under the stress of an actual attack. - The self-defense program should include simulated assaults**, with a fully padded instructor in realistic rape and attack scenarios, to allow you to practice what you’ve learned</item>
+        <item>What if the unthinkable happens? You are suddenly confronted by a predator who demands that you go with him — be it in a car, or into an alley, or a building. It would seem prudent to obey, but you must never leave the primary crime scene with the predator. You are far more likely to be killed or seriously injured if you go with the predator than if you run away (even if he promises not to hurt you). Run away, yell for help, throw a rock through a store or car window — do whatever you can to attract attention. And if the criminal is after your purse or other material items, throw them one way while you run the other</item>
+        <item>Unfortunately, no matter how diligently we practice awareness and avoidance techniques, we may find ourselves in a physical confrontation. Whether or not you have self-defense training, and no matter what your age or physical condition, it is important to understand that you CAN and SHOULD defend yourself physically. You have both the moral and legal right to do so, even if the attacker is only threatening you and hasn’t struck first. Many women worry that they will anger the attacker and get hurt worse if they defend themselves, but statistics clearly show that your odds of survival are far greater if you do fight back. Aim for the eyes first and the groin second. Remember, though, to use the element of surprise to your advantage — strike quickly, and mean business. You may only get one chance</item>
+        <item>Pepper spray, like other self-defense aids, can be a useful tool. However, it is important to understand that there can be significant drawbacks to its use. For example, did you know that it doesn’t work on everyone? Surprisingly, 15-20% of people will not be incapacitated even by a full-face spray. Also, if you’re carrying it in your purse, you will only waste time and alert the attacker to your intentions while you fumble for it. Never depend on any self-defense tool or weapon to stop an attacker. Trust your body and your wits, which you can always depend on in the event of an attack</item>
+        <item>This crime is on the rise. The primary way to prevent a home invasion is simply to never, ever open your door unless you either are certain you know who’s on the other side or can verify that they have a legitimate reason for being there (dressing up as a repair person or even police officer is one trick criminals use). In the event that an intruder breaks in while you’re home, you should have a safe room in your house to which you can retreat. Such a room should be equipped with a strong door, deadbolt lock, phone (preferably cell phone), and a can of pepper spray or fire extinguisher</item>
+        <item>Lock all doors and keep windows up when driving. Most car-jackings take place when vehicles are stopped at intersections. The criminals approach at a 45-degree angle (in the blind spot), and either pull you out of the driver’s seat or jump in the passenger’s seat.</item>
+        <item>Violent crimes against women happen in the best and worst hotels around the world. Predators may play the part of a hotel employee, push their way through an open or unlocked door, or obtain a pass key to the room. As with home safety, never open your door unless you are certain the person on the other side is legitimate, and always carry a door wedge with you when you travel. A wedge is often stronger than the door it secures</item>
+        <item>Although the Internet is educational and entertaining, it can also be full of danger if one isn’t careful. When communicating online, use a nickname and always keep personal information such as home address and phone number confidential. Instruct family members to do the same. Keep current on security issues, frauds, viruses, etc. by periodically referring to “The Police Notebook” Internet Safety Page.</item>
+    </string-array>
+    <string-array name="tipsBeautyTitle">
+        <item>Follow the CTM routine</item>
+        <item>Look For Key Ingredients That Benefit Skin</item>
+        <item>Eat Well</item>
+        <item>Supplements</item>
+        <item>Indulge in face masks</item>
+        <item>Facials</item>
+        <item>Exercise</item>
+        <item>Exfoliate</item>
+        <item>Water</item>
+        <item>Be Healthy</item>
+        <item>Night Cream</item>
+        <item>Eye Cream</item>
+        <item>Body Lotion</item>
+        <item>Hydrating Your Skin</item>
+        <item>Sunscreen Is Important</item>
+    </string-array>
+    <string-array name="tipsBeautyContent">
+        <item>This is important! The cleansing, toning and moisturizing routine is something most of us end up ignoring all through our younger days. When you hit your 30s, it is even more important that you follow it to the T. The CTM routine will help to clear your skin of any accumulated dirt and grime. It will also keep your skin looking fresh and healthy.</item>
+        <item>Whether you prefer natural or commercial cosmetics for skin care, look for key ingredients that help your skin look youthful and radiant. Anti-oxidants, vitamin C, glycolic and hyaluronic acids help prevent premature ageing and severe dryness. As a result, it keeps your skin fresh and bright</item>
+        <item>Include lots of fruits and veggies in your diet. Fresh fruits and vegetable salads will help your body to get rid of toxins. This will help reveal healthy skin</item>
+        <item>Take Vitamin C and Vitamin E supplements to ensure that your skin is strong and maintains its elasticity. These vitamins produce collagen which helps maintain the skin elasticity for a longer time.</item>
+        <item>You don’t need to buy expensive face masks off the shelves or head to the spa. A great way to indulge in some naturally beneficial skin treatment is to use ingredients from your kitchen.Apply some yogurt on your face and neck Let it sit for 15 minutes and then wash off with lukewarm water. For some variation, add a bit of honey to it</item>
+        <item>Facials are a great way to keep your skin looking young and radiant. Even if your schedule is hectic, make the time to go to a spa for a facial at least once a month. It will do wonders for your skin and you will feel the dramatic change in your skin texture</item>
+        <item>Walk for 30 minutes or just hit the gym. Indulging in regular exercise will not only cleanse your skin but will also nourish your blood cells. This further helps to flush out the waste products from your skin. Exercising regularly helps reduce stress, prevents acne and will keep you healthy overall. Being healthy and fit = beautiful skin naturally</item>
+        <item>You will need to exfoliate your skin at least thrice a week to reveal brighter skin and get rid of dead skin cells. Make a simple scrub by mixing fine granules of sugar with lemon juice and honey</item>
+        <item>To keep your skin hydrated from within, drink plenty of water every day. Experts recommend drinking at least 8-10 glasses of water every day. It is essential not just for a healthy body but beautiful skin as well. It also helps in eliminating the toxins from your body</item>
+        <item>For those who cannot give it up, reduce your smoking and intake of alcohol. These are known to pump in toxins in your body causing your skin to look unhealthy. Cut down on the same and your skin will surely benefit</item>
+        <item>Use a night cream that will take of your skin as you sleep. Night creams are known to hydrate the skin and help reduce patchy skin.</item>
+        <item>30’s is the time when fine lines and wrinkles start to appear. Use a good quality night cream that not only helps reduce these fine lines but will also keep those dark circles away. Invest in a good eye cream to take care of those fine lines that first appear around the eyes</item>
+        <item>Your face is not the only area that needs care. To get beautiful skin all over, make sure that you apply body lotion all over your body twice a day. Concentrate on areas that are prone to dryness such as your elbows, knees, heels, etc</item>
+        <item>It is a skin care routine that everyone should practice. Keep your skin hydrated with a great moisturizer that is richer than the ones that you used while you were in your 20s. Using a serum with your moisturizer can also help in providing hydration to your skin. It helps in removing fine lines, dark circles, open pores, etc</item>
+        <item>Sunscreen is essential at any age. Never go out without it. Sunscreen that contains an SPF of 30 or more is ideal for women above 30. If you use a foundation, choose one that contains SPF. It will protect you against the harmful sun rays. These natural beauty tips for women over 30 are great to follow and beneficial. Try them out and tell us which ones you are already following!</item>
+    </string-array>
+    <string-array name="tipsFashionTitle">
+        <item>Old things must go!</item>
+        <item>Big event coming? Shop with a plan</item>
+        <item>Extend the life of your cashmere</item>
+        <item>Stretch new shoes painlessly</item>
+        <item>Dress it up in a couple of seconds – bow tie, clip on earrings on flats</item>
+        <item>Be smart when you buy a jacket</item>
+        <item>The rules of showing skin</item>
+        <item>Treat yourself like a queen</item>
+        <item>Make clothes work for you</item>
+        <item>Having trouble with jeans?</item>
+        <item>Say no to makeup &amp; deodorant stains</item>
+        <item>Accessorize with bold colors</item>
+        <item>Stock up on scarfs</item>
+        <item>A comfortable outfit is a must for a fun night out</item>
+        <item>Working with a limited budget</item>
+        <item>Check out every angle</item>
+        <item>Open your mind</item>
+        <item>Belts are your best friend</item>
+        <item>Ever tried on menswear?</item>
+        <item>Keep a spare garment with you, just in case</item>
+        <item>There’s nothing better than tailored clothes – find a pleasant and talented tailor and customize your clothes</item>
+        <item>S, M and L bags</item>
+        <item>Learn to handle your luggage</item>
+        <item>Upgrade your sewing skills</item>
+        <item>Take care of your clothes</item>
+    </string-array>
+    <string-array name="tipsFashionContent">
+        <item>This is where you should start – there’s no room for change if you don’t make it yourself. Open up your closet and take a good look at your clothes. You should ask yourself one simple question – if you were in a store right now, what items from your closet would you buy? It’s a very simple and quite efficient game you should play once in a while. If you want to stop spending hours in front of your closet, it needs to be neat and color coordinated – hoarding clothes always leads to a mess. All clothes you decide need to go shouldn’t be thrown away – donate them! That way, you’ll feel good about it.</item>
+        <item>Whether you’re getting married, or you’re simply attending a black-tie event, you’ll definitely spend a lot of time searching for the right outfit. In order to be efficient and be happy with your choice, you should go shopping with a proper hairstyle, makeup and shoes, so you can see the bigger picture. Also, don’t forget to put on some nice underwear – you don’t want to dismiss a dress that doesn’t look good on you because you haven’t paid attention to your panty line</item>
+        <item>The fact of something is called cashmere shouldn’t mean much, so the first step towards a long and happy life of an item made out of cashmere is purchasing a quality item. This material can be processed in many different ways, so you could easily end up with an overpaid poor quality sweater. However, there are some indicators that can show you what are you looking at. First, you should be looking for thick knitted garments, and second, try stretching it – if it pulls back, it’s a good type of cashmere. Chances are, you’ll pay good money for any quality cashmere item, so you should take care of it, which means washing it in cold water by hand.</item>
+        <item>There are different ways to avoid calluses, which can really make your day difficult. Most of those problems come from high heels, right? Up until now, I’ve tried different kinds of methods, and the most effective one includes the freezer, believe it or not. If you fill a couple of freezer bags with water, place them in your shoes, and put them into your freezer to stay overnight, you’ll be able to see a huge difference in the morning.</item>
+        <item>We’d all appreciate it if the days were a bit longer, but regarding the fact that’s not about to happen, you should use all kind of trick and tips in order to dress up quickly. A nice touch is always a bow tie – you can make it work with almost anything. If you don’t have any heels near buy, you could class up your flats by placing clip on earrings on them.</item>
+        <item>Purchasing jackets, coats and blazers has just one rule – it needs to fit your shoulders. If it’s too tight or too wide, leave it in the store, because this is one thing that’s very difficult to alter, even if you have a good tailor by your side</item>
+        <item>Speaking of rules, we should mentioned those regarding showing skin. It’s pretty simple – show one body part at a time. So if you’re showing your cleavage, pay attention you’re not combining that with miniskirts, and the other way around. Looking and feeling attractive shouldn’t be based on how naked you are. A little bit of mystery is always a nice touch</item>
+        <item>Beauty is connected with health more than you think. Taking care of your health starts with resting – no matter how many responsibilities you have during the day, you shouldn’t let them intervene with your sleep time. You’ve probably heard about something called beauty sleep, and you should know it isn’t a myth. So, invest in your beauty and health by encasing your bed with pure silk</item>
+        <item>You know how some people simply know how to wear the right clothes? There’s no mystery there, and actually, you could pull it off, too, by just thinking about what you’re wearing a little bit more. It all depends on how your body is built – you should tend to accent your features in the right way. For example, wearing V neck will make your torso look longer, and wearing nude pups will do miracles for the length of your legs. Embrace your shape and learn to love all its imperfections</item>
+        <item>You can’t have a fashionable clothing collection without jeans, but it can be hard balancing trendy ones with those which fit you perfectly. The first rule of buying jeans, no matter the type, is that when you’re in doubt regarding the size, you should always go with the smaller size – they’ll stretch after only two washes. If your daily outfit usually consists of jeans, having a glue gun is necessary. It’s a simple way to do your stitches and hams, it doesn’t cost much and you can decorate your denim whatever you find it suitable. When it comes to altering them, make sure you’ve washed them twice before you visit your tailor. A piece of advice – all hems of your jeans should go up to the tops of your shoes.</item>
+        <item>These kind of stains are not just unattractive, but also hard to wash. No matter how much we pay attention to avoid them, they have an annoying tendency to appear, right? When it comes to more expensive materials, I strictly advise to wash the stained part with warm water and if that doesn’t help, dampen that garment in water with some detergent. Most of new stains will come off if you just rub it with baby wipes on oil base</item>
+        <item>Accessorizing is what actually gives an outfit a personal touch. The way you accessorize is an important part of your style. Most of garments in your color are probably (and should be) in neutral colors, so you can combine them when you find it suitable. So, when you’re purchasing accessories, you should be free to get them in wild colors. Also, don’t be afraid to clash together different materials, like edgy chains with pears and feathers, perhaps. An interesting addition to accessorizing somehow everyone tends to forget are buttons – try switching a set from your garment with the one you choose. It doesn’t require any special sewing skills, and it fits any kind of budget. You should know that accessorizing rounds out an outfit, so try to find time to put on a couple of items.</item>
+        <item>Speaking of accessorizing, the classiest one you can put on is a scarf. They come in different shapes, colors, sizes, materials and forms, so you’ll be able to find a type you’ll like, for sure. It’s the fastest way to accessorize, and it can turn every outfit looking like million bucks.</item>
+        <item>If you don’t pick out your clothing items carefully, you might end up fixing up your outfit every couple of minutes, unable to have any fun at all. Start by choosing shoes which are comfy, and coordinate your outfit with them. Make sure all items fit perfectly, so that nothing is slipping. Also, experts recommend carrying a sturdy chain bag, so your hands can remain free</item>
+        <item>The hardest part of shopping is deciding when it’s enough. It’s more than easy to be carried away, but with a little bit of planning, you’ll be able to make it work. Start by making a list of items you need. Second step is to look for possible discounts, or some coupons you might have. However, don’t buy something just because it’s cheap – the chances you won’t put it one more than twice. Remember, cost-effective and cheap are not synonyms. It’s important to stick with your schedule, and make a type of agreement with yourself. Also, always pick quality before quantity. If you’re in doubt should you purchase an expensive item, make sure to check its lining – if you’re able to notice its quality, take it. A nice lining is a signature of designer clothes.</item>
+        <item>Take your time when buying clothes, or picking out items for an outfit. Check out every angle of yourself in front of a mirror – if you feel comfortable and attractive, you’ll look that way. Besides, some garments may be see-through during the day, so check them out in a different lighting, just to make sure.</item>
+        <item>Having only one type of clothes in your closet will bore you in time. Whether it’s about accessories or clothes, try on things that you think they are cute, but not for you – you’ll be surprised at the results. Experiment with new colors and try new things with makeup. It’s not like you have to allow people to see you in something, just try it on for fun.</item>
+        <item>A suitable belt can make any outfit better. If used the right way, it’ll accent your figure by making your waist thinner. So, you should find a way to make your belt pop up, and the best way to do it is for it to be in different material or/and opposite material than your garment.</item>
+        <item>Other than being a really strong fashion statement, you should know that a suit, and all menswear in general, is more comfortable than most women’s clothes. You shouldn’t wear anything frumpy or too baggy, that’s not the point at all. Finding a women’s suit which will fit like it’s tailored has never been easier, you’ll still feel feminine, just a dash more powerful.</item>
+        <item>Accidents happen, you can’t argue with that. No matter how careful you are, something will get spilled when you least expected it. So, have a spare clothing item nearby at all times possible. Start by taking something to your office, like perhaps a white button-down shirt, which is a classic, and it will probably be able to fit in your outfit. Believe it or not, most woman don’t have the right white shirt – it’s the same story like the one with bras, so look for a second opinion when purchasing one.</item>
+        <item>There’s a good reason why tailored clothes cost so much – they fit perfectly. A few inches here and there make a huge difference, so don’t hesitate to visit your tailor from time to time. If you’re out of ideas about what you’d like to sewn for you, you can always alter the clothes you have bought. Make friends with a good tailor – it will make the whole process much easier.</item>
+        <item>A handbag is one of the most versatile and important accessories that a woman can own. There’s no such thing as “one too many” when it comes to bags and purses, but pay attention to what type is the best for you. Sure, you’ll need different ones for different occasions,so your should at least have three different kinds for starters – small, medium and large. From styles traditionally considered masculine to typical high end women’s handbags, there is nothing you can’t combine with the right clothes depending on the occasion. After that, you should concentrate on the type you use the most, which is also the type which will get worn out the fastest. That is why you should have more of them – if you switch them regularly, they will last longer.</item>
+        <item>You can’t always hope to run into a gentleman who will carry your six bags around. So, if you don’t want to end up dealing with all that weight by yourself, learn how to pack efficiently – it can come in real handy when you’re in a hurry. Also, there’s a simple way to avoid your clothes getting all crumpled – put the clothing items in different freezer bags carefully, and place them in your suitcase. This is time-consuming, but if you need to attend an important event, freezer bags will keep your clothes clean and neat.</item>
+        <item>It will come a time when you’ll regret not developing these skills, so you should work on them now, and avoid any future embarrassments. There’s a bunch of tutorials you’ll be able to find online – all you really need is a sewing kit and patience</item>
+        <item>Devoting this much time to your closet is unnecessary if you don’t take care of all those clothes you’ve carefully chosen. One quality iron, a nice detergent and a couple of seconds you should devote to checking the instructions on a garment is all it takes, so don’t be lazy. There is something for everyone on this list, and the truth of the matter is that mastering some fashion basics will allow you to develop and polish up a unique style that suits you very well and let’s you stand out, but has a universally aesthetic quality to it at the same time.</item>
+    </string-array>
+    <string-array name="tipsPregTitle">
+        <item></item>
+    </string-array>
 </resources>

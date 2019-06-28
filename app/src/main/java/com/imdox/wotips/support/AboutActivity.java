@@ -1,4 +1,4 @@
-package com.imdox.wotips;
+package com.imdox.wotips.support;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.imdox.wotips.R;
 
 public class AboutActivity extends AppCompatActivity {
 

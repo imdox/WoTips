@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1091991556148",
+    "firebase_url": "https://wotips-810f8.firebaseio.com",
+    "project_id": "wotips-810f8",
+    "storage_bucket": "wotips-810f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091991556148:android:7bfcf7f4c7c508b5",
+        "android_client_info": {
+          "package_name": "com.imdox.wotips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091991556148-b0ilgbe7pu1bva94o08vid7jruitvmb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imdox.wotips",
+            "certificate_hash": "47f98f96dbf8391847b1fed0650ddea930b93fff"
+          }
+        },
+        {
+          "client_id": "1091991556148-44mhuns7iofpg22n5jk7dldkgmd35ddh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTIDpDui-8BhVpzogbcv1tipBy72VIXRk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091991556148-44mhuns7iofpg22n5jk7dldkgmd35ddh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-1273779759756778~3981099811"
+    }
+  ],
+  "configuration_version": "1"
+}

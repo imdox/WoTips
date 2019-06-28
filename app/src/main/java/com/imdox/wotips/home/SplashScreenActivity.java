@@ -1,4 +1,4 @@
-package com.imdox.wotips;
+package com.imdox.wotips.home;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.imdox.wotips.support.AppController;
+import com.imdox.wotips.R;
 
 
 public class SplashScreenActivity extends Activity {
@@ -68,7 +71,6 @@ public class SplashScreenActivity extends Activity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
-
 
 
     private void StartAnimations() {

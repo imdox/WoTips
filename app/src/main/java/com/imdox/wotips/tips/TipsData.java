@@ -1,4 +1,4 @@
-package com.imdox.wotips;
+package com.imdox.wotips.tips;
 
 public class TipsData {
     private  String strHeading,strValue;
