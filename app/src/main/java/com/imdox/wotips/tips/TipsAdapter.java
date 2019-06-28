@@ -76,7 +76,7 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 viewHolder=new DetailsViewHolder(modelView);
                 break;
             case AppController.USER_TIPS_TYPE:
-                layout= R.layout.tips_item;
+                layout= R.layout.user_tips_item;
                 View userTipsView = LayoutInflater.from(parent.getContext()).inflate(layout, parent, false);
                 viewHolder=new userTipsViewHolder(userTipsView);
                 break;
@@ -111,21 +111,24 @@ public class TipsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public class userTipsViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView txtHeading,txtTips;
+        private TextView txtHeading,txtTips,txtUser;
 
         public userTipsViewHolder(View itemView) {
             super(itemView);
             // Initiate view
             txtHeading =(TextView)itemView.findViewById(R.id.txtHeading);
             txtTips = (TextView) itemView.findViewById(R.id.txtTips);
+            txtUser = (TextView) itemView.findViewById(R.id.txtUser);
 
             txtHeading.setTypeface(AppController.getDefaultBoldFont(context));
             txtTips.setTypeface(AppController.getDefaultFont(context));
+            txtUser.setTypeface(AppController.getDefaultFont(context));
         }
 
         public void userTipsShowDetails(final UserTips userTips, final int position){
             txtHeading.setText((position+1)+". "+ userTips.getTipTitle());
             txtTips.setText(userTips.getTipContent());
+            txtUser.setText("Added by "+userTips.getUserDisplayName()+", on "+userTips.getStrCreatedDate());
         }
     }
 }

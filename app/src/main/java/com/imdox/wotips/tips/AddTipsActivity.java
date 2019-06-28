@@ -14,6 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.imdox.wotips.R;
 import com.imdox.wotips.support.AppController;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class AddTipsActivity extends AppCompatActivity {
@@ -118,7 +119,7 @@ public class AddTipsActivity extends AppCompatActivity {
             String tipsId = databaseRefObject.push().getKey();
             UserTips userTips=new UserTips(edtUserMobile.getText().toString().trim(),edtUserEmail.getText().toString().trim(),
                     edtUserName.getText().toString().trim(),edtDisplayName.getText().toString().trim(),"General",edtTitle.getText().toString().trim()
-                    ,edtContent.getText().toString().trim(),"1",String.valueOf(new Date()));
+                    ,edtContent.getText().toString().trim(),"1",new SimpleDateFormat("dd MMM yyyy").format(new Date()));
             // pushing user to 'user_details' node using the userId
             databaseRefObject.child(tipsId).setValue(userTips);
             Toast.makeText(AddTipsActivity.this,"Tips Added successfully.",Toast.LENGTH_SHORT).show();
